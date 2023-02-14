@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Выставление оценок</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="index.css">
+	<script src="button-fun.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1 class="header-size">Получи свою оценку!</h1>
+	</header>
+	<div class="wrapper">
+		<div class="content">
+			<p id="mark-info">Ваша оценка - 2.</p>
+			<p>Вы довольны данной отметкой?</p>
+			<input onclick="agreeMark()" class="favorite yes-button" type="button" value="Да">
+			<input onmousemove="moveRandomButton(this)" onclick="changeMark(getRandomIntInclusive(2,5))"
+				id="button-meme" class="favorite no-button" type="button" value="Нет">
+		</div>
+	</div>
+</body>
+
+</html>
